@@ -8,25 +8,30 @@ Created on Tue Jan  7 15:14:06 2020
 #This program calculats  a salesperson's pay 
 
 def main():
-    #Get salesperson's monthly sales
-    sales = get_sales()
-    #Get amount of advanced pay
-    advance = advanced_pay()
-    #Determine comission rate
-    comm_rate = det_comm_rate(sales)
-    #Determine salesperson's pay
-    pay = sales * comm_rate - advance
-    print('The monthly pay is $',format(pay,'.2f'),sep='')
-    # check for reinbursement
-    if pay < 0:
-        print('You have not sold enough you need to reimburse the company')
-def get_sales():
-    monthly_sales = float(input('Enter total monthly sales: '))
-    return monthly_sales
+    try:
+        #Get salesperson's monthly sales
+        sales = get_sales()
+        #Get amount of advanced pay
+        advance = advanced_pay()
+        #Determine comission rate
+        comm_rate = det_comm_rate(sales)
+        #Determine salesperson's pay
+        pay = sales * comm_rate - advance
+        print('The monthly pay is $',format(pay,'.2f'),sep='')
+        # check for reinbursement
+        if pay < 0:
+            print('You have not sold enough you need to reimburse the company')
+
+    except ValueError:
+        print('Invalid Input, please enter numeric values')
+        
+def get_sales():   
+        monthly_sales = float(input('Enter total monthly sales: ')) 
+        return monthly_sales
 
 def advanced_pay():
-    print('Enter 0 is there is no advance pay')
-    adv = float(input('Enter the advanvce payment: '))
+    print('Enter 0 if there is no advance pay')
+    adv = float(input('Enter the advance payment: '))
     return adv
 
 def det_comm_rate(sales):

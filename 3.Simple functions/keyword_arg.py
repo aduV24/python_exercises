@@ -6,7 +6,7 @@ Created on Wed Dec 11 19:19:54 2019
 """
 
 def main():
-    show_interest(principal=1000,period=10,rate=0.01)
+    show_interest(1000,10,0.01)
     
 def show_interest(principal,period,rate):
     interest = principal * period * rate

@@ -14,11 +14,11 @@ def tax(pur):
     county_tax = pur * 0.02
     total_tax = sales_tax + county_tax
     total = pur + total_tax    
-    print("Purchase = ",format(pur,',.2f'))
-    print("state tax = ",format(sales_tax,',.2f'))
-    print("County tax = ",format(county_tax,',.2f'))
-    print("Total tax = ",format(total_tax,',.2f'))
-    print("Grand Total = ", format(total, ',.2f'))
+    print("Purchase = $",format(pur,',.2f'), sep= '')
+    print("state tax = $",format(sales_tax,',.2f'), sep ='')
+    print("County tax = $",format(county_tax,',.2f'), sep ='')
+    print("Total tax = $",format(total_tax,',.2f'), sep = '')
+    print("Grand Total = $", format(total, ',.2f'), sep = '')
     
     
 main()

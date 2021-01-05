@@ -34,6 +34,5 @@ def main():
         print('')
         print('Error!!!!     please input primary colors only!!')
 
-        
 main()
     

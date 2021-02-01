@@ -37,9 +37,9 @@ def main():
         
  #This function gets a list, removes the lowst score
  #And returnes a new list without the score
-def drop_lowest_score(list):
-    lowest = min(list)
-    list.remove(lowest)
-    return list
+def drop_lowest_score(v_list):
+    lowest = min(v_list)
+    v_list.remove(lowest)
+    return v_list
     
 main()

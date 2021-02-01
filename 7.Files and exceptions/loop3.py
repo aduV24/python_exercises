@@ -7,7 +7,7 @@ Created on Mon Jan 27 22:40:47 2020
 total =0.0
 
 
-input_file  = open(r'C:\Python projects\files\sales.txt','r')
+input_file  = open(r'C:\Python projects\python_exercises\files\sales.txt','r')
 for line in input_file:
     amount = float(line)
     print(format(amount,'.2f'))

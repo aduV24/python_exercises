@@ -17,7 +17,7 @@ def main():
         again = input('y = yes, anything else = no: ')
         print()
         #Display the names in the list
-        print('Here are the names you have entered')
-        for name in name_list:
-            print(name) 
+    print('Here are the names you have entered')
+    for name in name_list:
+        print(name) 
 main()

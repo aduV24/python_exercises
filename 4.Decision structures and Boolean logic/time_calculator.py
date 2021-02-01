@@ -18,4 +18,6 @@ def main():
     elif seconds >=86400:
          time = seconds // 86400
          print(time,"Days")
+    else: 
+        print(seconds,"seconds")
 main()

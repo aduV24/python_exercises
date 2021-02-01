@@ -23,7 +23,7 @@ def main():
             print('number Generated, please take a guess between 1 - 10')
             #Generate number 
             num = random.randint(1,10)
-            #print (num)
+            print (num)
             guess = int(input('Guess? '))
             count = 1
             while guess != num :

@@ -8,6 +8,7 @@ Created on Thu Dec 19 22:03:13 2019
 # This program sums up 5 numbers entered by th user
 def main():
     print('Please Enter numbers you wish to add')
+    #Initialize an accumulator variable
     total = 0.0
     for number in range(5):
         number = int(input ('Enter number: '))

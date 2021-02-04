@@ -22,3 +22,6 @@ def main():
     print('This side is up:', my_coin.get_sideup())
     
     #Call the main function
+    
+    
+main()
